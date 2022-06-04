@@ -1,0 +1,107 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+    font-family: Helvetica, sans-serif;
+}
+.flex
+{
+display: flex;
+}
+.none
+{
+    display: none;
+}
+.overlay
+{
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* vertical-align: middle; */
+    text-align: center;
+    justify-content: center;
+}
+.overlay .win-container
+{
+    background-color: rgb(70, 236, 58);
+    padding: 1rem;
+    color:white;
+    font-weight: 400;
+}
+.overlay h1{
+    display: inline;
+    /* margin-right: 1rem; */
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.grid
+{
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 30rem;
+    width:30rem;
+
+    
+    /* gap:1rem; */
+}
+@media (max-width: 720px) {
+    h1{
+        font-size: 2rem;
+    }
+    .grid {
+    height:20rem;
+    width:20rem;
+    }
+}
+
+
+.item-4,.item-5,.item-6
+{
+    border-top: 0.25rem  solid black;
+    border-bottom:  0.25rem  solid black ;
+}
+
+.item-2,.item-5,.item-8
+{
+    border-left: 0.25rem  solid black;
+    border-right: 0.25rem  solid black;
+
+}
+.cross
+{
+    background-image: url('cross.png');
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.circle
+{
+    background-image: url('circle.png');
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+footer{
+    margin: 2rem;
+    text-align: center;
+}
+.reset
+{
+    display: flex;
+    justify-content: center;
+    margin:2rem 0;
+}
